@@ -10,12 +10,12 @@ const cors = require("cors");
 const errorMiddleware = require("./middleware/error");
 app.use(
   cors({
-    origin: "*",
+    origin: "https://magical-donut-48f8f0.netlify.app",
     credentials: true,
   })
 );
 app.use((req, res, next) => {
-  res.setHeader("Access-Control-Allow-Origin", "*");
+  res.setHeader("Access-Control-Allow-Origin", "https://magical-donut-48f8f0.netlify.app");
   next();
 });
 //Config
