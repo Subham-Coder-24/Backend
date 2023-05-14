@@ -10,6 +10,7 @@ const cors = require("cors");
 const errorMiddleware = require("./middleware/error");
 app.use(
   cors({
+    origin:"http://localhost:4000",
     credentials: true,
   })
 );
