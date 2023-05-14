@@ -10,10 +10,14 @@ const cors = require("cors");
 const errorMiddleware = require("./middleware/error");
 app.use(
   cors({
-    origin:"*",
+    origin: "*",
     credentials: true,
   })
 );
+app.use((req, res, next) => {
+  res.setHeader("Access-Control-Allow-Origin", "*");
+  next();
+});
 //Config
 dotenv.config({ path: __dirname + "/config" + "/config.env" });
 
