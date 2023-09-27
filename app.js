@@ -43,8 +43,7 @@ app.use("/api/v1", payment);
 // app.use(express.static(path.join(__dirname, "../frontend/build")));
 
 app.get("/", (req, res) => {
-  res.send("sdhgvwshgdvb");
-});
+  res.send("<h1> This is E-commerce Website api link </h1>");
 
 //MiddleWare For error
 app.use(errorMiddleware);
