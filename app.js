@@ -44,6 +44,7 @@ app.use("/api/v1", payment);
 
 app.get("/", (req, res) => {
   res.send("<h1> This is E-commerce Website api link </h1>");
+});
 
 //MiddleWare For error
 app.use(errorMiddleware);
